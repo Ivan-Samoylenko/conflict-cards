@@ -1,11 +1,12 @@
-import { Routes, Route } from "react-router-dom";
+import { Layout } from 'components/Layout';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-    return (
-        <Routes>
-            <Route path='/' element={<div>Hello</div>} />
-        </Routes>
-    );
-};
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />} />
+    </Routes>
+  );
+}
 
 export default App;

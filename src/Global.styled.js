@@ -7,6 +7,11 @@ const Global = createGlobalStyle`
 
     body {
         margin: 0;
+
+        font-family: sans-serif;
+
+        color: #ccc;
+        background-color: #333;
     }
 
     h1,h2,h3,h4,p,ul {
@@ -21,6 +26,8 @@ const Global = createGlobalStyle`
     }
 
     a {
+        color: inherit;
+
         text-decoration: none;
     }
 
