@@ -72,7 +72,40 @@ export const Main = styled.main`
 `;
 
 export const Footer = styled.footer`
-  min-height: 40px;
+  min-height: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
   background-color: #333;
+`;
+
+export const InfoIcon = styled.button`
+  width: 28px;
+  height: 28px;
+  border: none;
+  padding: 0;
+
+  display: block;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+
+  color: #000;
+  background-color: #ccc;
+
+  border-radius: 50%;
+  outline: none;
+
+  &:hover,
+  &:focus-within {
+    background-color: #eee;
+
+    box-shadow: ${p => p.theme.shadows.box.profileIcon};
+  }
 `;

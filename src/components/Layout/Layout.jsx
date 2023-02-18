@@ -1,3 +1,5 @@
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 import {
   Container,
   Header,
@@ -5,8 +7,8 @@ import {
   ProfileIcon,
   Main,
   Footer,
+  InfoIcon,
 } from './Layout.styled';
-import { Button } from 'components/Button';
 
 function Layout() {
   return (
@@ -16,10 +18,19 @@ function Layout() {
         <ProfileIcon to="/">P</ProfileIcon>
       </Header>
       <Main>
-        <p>Main</p>
-        <Button>Button</Button>
+        <Suspense
+          fallback={
+            <div>
+              <p>It is fallback for Suspense</p>
+            </div>
+          }
+        >
+          <Outlet />
+        </Suspense>
       </Main>
-      <Footer>Footer</Footer>
+      <Footer>
+        <InfoIcon>i</InfoIcon>
+      </Footer>
     </Container>
   );
 }
