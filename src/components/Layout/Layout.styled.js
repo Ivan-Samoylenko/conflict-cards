@@ -69,6 +69,8 @@ export const Main = styled.main`
   flex-grow: 1;
 
   background-color: #111;
+
+  overflow: hidden;
 `;
 
 export const Footer = styled.footer`
