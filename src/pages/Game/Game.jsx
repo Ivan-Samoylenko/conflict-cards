@@ -1,6 +1,8 @@
-import { Wrapper, Table, TableImage, PlayField, CardSet } from './Game.styled';
-import table from 'images/table.png';
+import { Wrapper } from './Game.styled';
+
 import { Button } from 'components/Button';
+import { GameTable } from 'components/GameTable';
+import { CardSet } from 'components/CardSet';
 
 function Game() {
   return (
@@ -8,11 +10,8 @@ function Game() {
       <Button anchor path="/">
         Завершити гру
       </Button>
-      <Table>
-        <TableImage src={table} alt="table" />
-        <PlayField></PlayField>
-      </Table>
-      <CardSet></CardSet>
+      <GameTable />
+      <CardSet />
     </Wrapper>
   );
 }
