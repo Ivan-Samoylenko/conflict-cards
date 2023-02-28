@@ -1,17 +1,17 @@
 import {
-  Table,
+  Borders,
   TopGameTable,
   BottomGameTable,
   PlayField,
 } from './GameTable.styled';
 
-function GameTable() {
+function GameTable({ rect }) {
   return (
-    <Table>
+    <Borders rect={rect}>
       <BottomGameTable></BottomGameTable>
       <TopGameTable></TopGameTable>
       <PlayField></PlayField>
-    </Table>
+    </Borders>
   );
 }
 

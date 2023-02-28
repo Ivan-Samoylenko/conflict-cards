@@ -7,6 +7,8 @@ const Global = createGlobalStyle`
 
     body {
         margin: 0;
+        width: 100vw;
+        height: 100vh;
 
         font-family: sans-serif;
 

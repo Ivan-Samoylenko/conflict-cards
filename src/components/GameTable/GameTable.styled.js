@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Table = styled.div`
-  width: 768px;
-  height: 300px;
+export const Borders = styled.div`
+  width: ${p => p.rect.width}px;
+  height: ${p => p.rect.height}px;
 
   position: absolute;
   bottom: 0;
@@ -14,8 +14,8 @@ export const Table = styled.div`
 `;
 
 export const TopGameTable = styled.div`
-  width: 768px;
-  height: 768px;
+  width: 100%;
+  height: 255.7%;
   border: 2px solid #555;
 
   position: absolute;
@@ -30,8 +30,8 @@ export const TopGameTable = styled.div`
 `;
 
 export const BottomGameTable = styled.div`
-  width: 768px;
-  height: 768px;
+  width: 100%;
+  height: 255.7%;
   border: 2px solid #444;
 
   position: absolute;
@@ -46,8 +46,8 @@ export const BottomGameTable = styled.div`
 `;
 
 export const PlayField = styled.div`
-  width: 468px;
-  height: 468px;
+  width: 60.9%;
+  height: 155.7%;
 
   position: absolute;
   top: 50%;

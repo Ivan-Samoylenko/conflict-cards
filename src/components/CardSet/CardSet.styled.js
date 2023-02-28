@@ -15,8 +15,8 @@ export const Set = styled.ul`
 `;
 
 export const SetItem = styled.li`
-  width: 20%;
-  height: 80%;
+  width: 15%;
+  height: 60%;
 
   position: absolute;
 
